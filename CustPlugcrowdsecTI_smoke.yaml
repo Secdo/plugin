@@ -15,24 +15,6 @@ paths:
   /smoke/{ip}:
     get:
       operationId: "Look up IP address in CrowdSec's dataset"
-      description: |
-        Retrieve CrowdSec Threat Intelligence (CTI) information about a given IP address using the smoke dataset.
-
-        The report should be structured as follows:
-        - **Summary**: Start with the IP's reputation (bolded), AS name and number, and mention the first and last seen dates early.
-        - **IP Range**: Mention the IP range and its reputation only if it is suspicious or malicious.
-        - **Behavioral Summary**: Concisely summarize the behaviors, classifications, associated MITRE techniques, CVEs, and attack details in a single paragraph. Prioritize what would be most valuable to a SOC analyst.
-        - **Classification Details**: Provide details of false positives and classifications relevant to the IP.
-        - **Targeted Countries**: List the countries targeted by the IP, highlighting any focus on particular countries using percentages.
-        - **Activity History**: Conclude with an analysis of the IP's aggressiveness and threat scores over different time periods, focusing on variations or consistency.
-        
-        Always add this mention and link at the end of the report "For more details visit: https://app.crowdsec.net/cti/{ip}" where {ip} is the IP address you are looking up.
-
-        #ExamplePrompt What does CrowdSec know about 1.2.3.4 ?
-        #ExamplePrompt Use CrowdSec's smoke database to provide info on 1.2.3.4
-        #ExamplePrompt What does the CrowdSec's smoke dataset say about the IP address 1.2.3.4?
-        #ExamplePrompt Could you give me an overview of CrowdSec ti's info on IP address?
-        #ExamplePrompt What do you know about 1.2.3.4 ?
       summary: "CrowdSecTI information on a given IP."
       parameters:
         - name: "ip"
