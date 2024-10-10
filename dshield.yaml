@@ -1,0 +1,178 @@
+openapi: 3.0.3
+info:
+  title: New Spec - OpenAPI 3.0
+  description: This is a sample description about this spec.
+  termsOfService: ''
+  contact:
+    email: ''
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about spec
+  url: ''
+servers:
+  - url: https://dshield.org
+    description: ''
+tags:
+  - name: Default
+    description: ''
+paths:
+  /api/count?json&r=0.3390705337722235&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845:
+    get:
+      description: ''
+      meta:
+        element: ''
+        originalPath: >-
+          https://dshield.org/api/count?json&r=0.3390705337722235&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      operationId: >-
+        get-api-count?json&r=0.3390705337722235&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      parameters:
+        - description: json
+          in: query
+          name: json
+          schema:
+            default: ''
+            example: ''
+            type: string
+        - description: r
+          in: query
+          name: r
+          schema:
+            default: '0.3390705337722235'
+            example: '0.3390705337722235'
+            type: string
+        - description: count
+          in: query
+          name: count
+          schema:
+            default: 50b8bc08-5dab-416e-aceb-3628b6553baa
+            example: 50b8bc08-5dab-416e-aceb-3628b6553baa
+            type: string
+        - description: width
+          in: query
+          name: width
+          schema:
+            default: '845'
+            example: '845'
+            type: string
+      responses:
+        '200':
+          description: Success
+      summary: >-
+        List
+        count?json&r=0.3390705337722235&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      tags:
+        - Default
+    parameters: []
+  /api/count?json&r=0.44373172394323523&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845:
+    get:
+      description: ''
+      meta:
+        element: ''
+        originalPath: >-
+          https://dshield.org/api/count?json&r=0.44373172394323523&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      operationId: >-
+        get-api-count?json&r=0.44373172394323523&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      parameters:
+        - description: json
+          in: query
+          name: json
+          schema:
+            default: ''
+            example: ''
+            type: string
+        - description: r
+          in: query
+          name: r
+          schema:
+            default: '0.44373172394323523'
+            example: '0.44373172394323523'
+            type: string
+        - description: count
+          in: query
+          name: count
+          schema:
+            default: 50b8bc08-5dab-416e-aceb-3628b6553baa
+            example: 50b8bc08-5dab-416e-aceb-3628b6553baa
+            type: string
+        - description: width
+          in: query
+          name: width
+          schema:
+            default: '845'
+            example: '845'
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                example-0001:
+                  value:
+                    status: ok
+              schema:
+                additionalProperties: false
+                properties:
+                  status:
+                    type: string
+                required: []
+                title: >-
+                  APICountJSONR0.44373172394323523&Count50B8Bc085Dab416EAceb3628B6553BaaWidth845-GetResponse
+                type: object
+          description: Success
+      summary: >-
+        List
+        count?json&r=0.44373172394323523&count=50b8bc08-5dab-416e-aceb-3628b6553baa&width=845
+      tags:
+        - Default
+    parameters: []
+  /api_diarypage_7_100000_handler_json.json:
+    get:
+      description: ''
+      meta:
+        element: ''
+        originalPath: https://dshield.org/api_diarypage_7_100000_handler_json.json
+      operationId: get-api_diarypage_7_100000_handler_json.json
+      parameters: []
+      responses:
+        '304':
+          description: ''
+      summary: List api_diarypage_7_100000_handler_json.json
+      tags:
+        - Default
+    parameters: []
+  /api_jobs_7_json.json:
+    get:
+      description: ''
+      meta:
+        element: ''
+        originalPath: https://dshield.org/api_jobs_7_json.json
+      operationId: get-api_jobs_7_json.json
+      parameters: []
+      responses:
+        '304':
+          description: ''
+      summary: List api_jobs_7_json.json
+      tags:
+        - Default
+    parameters: []
+  /api_podcastpage_7_80000_json.json:
+    get:
+      description: ''
+      meta:
+        element: ''
+        originalPath: https://dshield.org/api_podcastpage_7_80000_json.json
+      operationId: get-api_podcastpage_7_80000_json.json
+      parameters: []
+      responses:
+        '304':
+          description: ''
+      summary: List api_podcastpage_7_80000_json.json
+      tags:
+        - Default
+    parameters: []
+components:
+  schemas: {}
+  securitySchemes: {}
