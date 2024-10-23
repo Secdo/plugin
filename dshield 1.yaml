@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+    title: D Shield
+    description: D Shield
+    version: "v3"
+servers:
+  - url: http://isc.sans.edu/api/
+paths:
+  /ip/{ip}:
+        get:
+            operationId: D Shield Report
+            summary: Lookup IP information
+            parameters:
+                - in: path
+                  name: ip
+                  schema:
+                      type: string
+                  required: true
+                  description: The IP address to lookup
+            responses:
+                "200":
+                    description: OK
